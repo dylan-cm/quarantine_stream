@@ -1,5 +1,5 @@
 import React from 'react'
-import CounterContainer from '../containers/CounterContainer'
+import WeekView from '../containers/WeekView'
 import Header from '../components/Header'
 import { Router, Route, Switch } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
@@ -16,7 +16,7 @@ function Routes() {
         <Global styles={S.global} />
         <Header />
         <Switch>
-          <Route path="/" component={CounterContainer} />
+          <Route path="/" component={WeekView} />
         </Switch>
       </ThemeProvider>
     </Router>
