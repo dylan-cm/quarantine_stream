@@ -82,10 +82,15 @@ function Header() {
         <SearchIcon />
         <h6>Filter</h6>
       </S.Pair>
-      <S.Pair>
-        <AddBoxIcon />
-        <h6>Add an event</h6>
-      </S.Pair>
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSfAslnS6xFVMtLKLOnlVcwBWPU2PZwesVXkBdb6Ss_FxJf1QQ/viewform?usp=sf_link"
+        target="_blank"
+      >
+        <S.Pair>
+          <AddBoxIcon />
+          <h6>Add an event</h6>
+        </S.Pair>
+      </a>
     </S.Header>
   )
 }
