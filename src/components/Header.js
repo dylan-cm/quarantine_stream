@@ -8,7 +8,6 @@ import SearchIcon from '@material-ui/icons/Search'
 import S from '../styles/style'
 
 S.Header = styled.div`
-  background-color: ${(p) => p.theme.colors.dark};
   color: ${(p) => p.theme.colors.light};
 
   display: flex;
@@ -16,13 +15,16 @@ S.Header = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  padding: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 12vh;
   box-sizing: border-box;
 
   h2 {
     font-family: 'Lato';
-    font-size: 2rem;
+    font-size: 4vh;
     font-weight: 800;
+    margin: 0;
   }
 `
 
