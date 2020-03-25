@@ -5,7 +5,7 @@ import { Router, Route, Switch } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 import { ThemeProvider } from 'emotion-theming'
 import { Global } from '@emotion/core'
-import { S } from '../styles/style'
+import S from '../styles/style'
 
 export const history = createBrowserHistory()
 

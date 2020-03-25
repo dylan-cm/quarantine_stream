@@ -1,4 +1,4 @@
-export const S = {}
+const S = {}
 
 S.t = {
   colors: {
@@ -37,6 +37,8 @@ S.global = {
       'Droid Sans',
       'Helvetica Neue',
       'sans-serif',
+      'Lato',
+      'Source Sans Pro',
     ],
     WebkitFontSmoothing: 'antialiased',
     MozOsxFontSmoothing: 'grayscale',
@@ -46,3 +48,5 @@ S.global = {
     fontFamily: ['source-code-pro', 'Menlo', 'Monaco', 'Consolas', 'Courier New', 'monospace'],
   },
 }
+
+export default S
