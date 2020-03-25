@@ -3,22 +3,22 @@ import CounterContainer from '../containers/CounterContainer'
 import Header from '../components/Header'
 import { Router, Route, Switch } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
-import styled from '@emotion/styled'
+import { ThemeProvider } from 'emotion-theming'
+import { Global } from '@emotion/core'
+import { S } from '../styles/style'
 
-const Container = styled.div`
-  text-align: center;
-`
 export const history = createBrowserHistory()
 
 function Routes() {
   return (
     <Router history={history}>
-      <Container>
+      <ThemeProvider theme={S.t}>
+        <Global styles={S.global} />
         <Header />
         <Switch>
           <Route path="/" component={CounterContainer} />
         </Switch>
-      </Container>
+      </ThemeProvider>
     </Router>
   )
 }

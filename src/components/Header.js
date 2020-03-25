@@ -1,35 +1,22 @@
 import React from 'react'
-import logo from '../assets/logo.svg'
 import styled from '@emotion/styled'
-import { keyframes } from '@emotion/core'
+import { S } from '../styles/style'
 
-const rotate360 = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-`
+S.Header = styled.div`
+  background-color: ${(p) => p.theme.colors.dark};
+  color: ${(p) => p.theme.colors.light};
 
-const TopBar = styled.div`
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: #fff;
-
-  .redux-logo {
-    animation: ${rotate360} infinite 20s linear;
-    height: 80px;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 `
 
 function Header() {
   return (
-    <TopBar>
-      <img src={logo} className="redux-logo" alt="logo" />
-      <h2>Welcome to Create Redux App</h2>
-    </TopBar>
+    <S.Header>
+      <h2>Quarantine Stream</h2>
+    </S.Header>
   )
 }
 

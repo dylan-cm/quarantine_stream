@@ -6,6 +6,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.22",
     "@emotion/styled": "^10.0.22",
+    "emotion-theming": "^10.0.27",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -40,9 +41,7 @@
     "lint-fix": "eslint --fix"
   },
   "husky": {
-    "hooks": {
-      "pre-commit": "format:staged"
-    }
+    "hooks": {}
   },
   "browserslist": [
     ">0.2%",
